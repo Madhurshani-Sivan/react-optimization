@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import MyParagraph from "./MyParagraph";
 
 const DemoOutput = (props) => {
@@ -7,4 +7,4 @@ const DemoOutput = (props) => {
   return <MyParagraph>{props.show ? "This is new!" : ""}</MyParagraph>;
 };
 
-export default DemoOutput;
+export default memo(DemoOutput);
